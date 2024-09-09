@@ -5,17 +5,16 @@
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 700;
-    padding: 1em 0 05em 0;
+    padding: 1em 0 0.5em 0;
 }
 
 .swiper-slide img{
     width: 100%;
 }
 
-.swiper-button-prev::after.swiper-button-next::after{
-display: none;
+.swiper-button-prev::after, .swiper-button-next::after{
+    display: none;
 }
-
 .swiper-pagination{
     position:initial;
     margin: 0.5em 0;
@@ -31,7 +30,7 @@ display: none;
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 00.5em; 
+    margin-bottom: 0.5em; 
 }
 .descricao-titulo{
     color:var (--laranja);
@@ -47,10 +46,21 @@ display: none;
     display: flex;
 }
 
-/*
-Para o título do livro coloquem:
-cor de texto:azul
-tamanho da fonte:18px
-peso da fonte:700;
-margem:0.5em
-*/
+.descricao-titulo-livro{
+color:var (--azul);
+font-size:18px;
+font-weight: 700;
+margin: 0.5em, 0;
+}
+
+.descricao-texto{
+    font-size: 14px;
+}
+
+.botoes-ancora{
+    text-decoration: none;
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    color: var(--branco);
+    font-weight: 700;
+}
